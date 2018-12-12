@@ -80,7 +80,8 @@ $fdia1=gmdate($fechaDia1, time()+$offset); //fecha del dia actual
 $hactual1=gmdate($horaActual, time()+$offset); //hora actual
 
 $archivo = $fdia1 . $hactual1;
-$csv_end = "\n";
+$csv_end = "
+";
 $csv_sep = ";";
 $csv_file = "codigos_" . $aliado . "_" . $archivo . ".csv";
 $csv="Barcode" . $csv_end;
@@ -88,7 +89,7 @@ $sql="SELECT `codigo` FROM `codigos` WHERE `aliado`=". $id . " AND `fecha` = '" 
 $res=mysqli_query($con, $sql);
 while($row=mysqli_fetch_array($res))
 {
-    $csv.=$row['codigo'].$csv_end."\n";
+    $csv.=$row['codigo'].$csv_end;
 }
 //Generamos el csv de todos los datos
 if (!$handle = fopen("../files/".$csv_file, "w")) {
