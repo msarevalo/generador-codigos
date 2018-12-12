@@ -88,7 +88,7 @@ $sql="SELECT `codigo` FROM `codigos` WHERE `aliado`=". $id . " AND `fecha` = '" 
 $res=mysqli_query($con, $sql);
 while($row=mysqli_fetch_array($res))
 {
-    $csv.=$row['codigo'].$csv_end;
+    $csv.=$row['codigo'].$csv_end."\n";
 }
 //Generamos el csv de todos los datos
 if (!$handle = fopen("../files/".$csv_file, "w")) {
