@@ -80,7 +80,7 @@ $fdia1=gmdate($fechaDia1, time()+$offset); //fecha del dia actual
 $hactual1=gmdate($horaActual, time()+$offset); //hora actual
 
 $archivo = $fdia1 . $hactual1;
-$csv_end = "
+$csv_end = "  
 ";
 $csv_sep = ";";
 $csv_file = "codigos_" . $aliado . "_" . $archivo . ".csv";
