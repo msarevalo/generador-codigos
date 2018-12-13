@@ -18,7 +18,7 @@ include '../back/conexion.php';
 <div style="margin-left: 350px">
     <a href="codigos.php">Volver</a><br><br>
     <label for="aliados" class="titulos">Aliado</label>
-    <select id="aliados" name="aliados" onchange="ajaxCodigos(this.value)">
+    <select id="aliados" name="aliados" onchange="ajaxArchivos(this.value)">
         <option disabled selected value="">Seleccione Aliado</option>
         <?php
         $consulta = mysqli_query($con,"SELECT `idAliado`,`nombreAliado` FROM `aliados` ORDER BY `nombreAliado` ASC;");
@@ -29,7 +29,7 @@ include '../back/conexion.php';
         }
         ?>
     </select><br><br>
-    <table id="codigos" name="codigos">
+    <table id="archivos" name="archivos">
     </table>
 </div>
 </html>

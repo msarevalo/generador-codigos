@@ -100,7 +100,7 @@ if (fwrite($handle, utf8_decode($csv)) === FALSE) {
     exit;
 }
 fclose($handle);
-$barchivo = mysqli_query($con, "INSERT INTO `archivos` (`nombreArchivo`, `fechaArchivo`) VALUES ('" . $csv_file . "', '" . $fecha ."')");
+$barchivo = mysqli_query($con, "INSERT INTO `archivos` (`nombreArchivo`, `fechaArchivo`, `aliado`) VALUES ('" . $csv_file . "', '" . $fecha ."', " . $id . ")");
 if (file_exists("../files/".$csv_file)) {
     header('Content-Description: File Transfer');
     header('Content-Type: application/octet-stream');

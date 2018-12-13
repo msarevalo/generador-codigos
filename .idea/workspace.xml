@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9ad6620-2373-4dd5-bb97-89282af3a8cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/codigos.php" beforeDir="false" afterPath="$PROJECT_DIR$/back/codigos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/conexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/back/conexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/prueba.php" beforeDir="false" afterPath="$PROJECT_DIR$/back/prueba.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/crear-aliado.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/crear-aliado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codigos-aliados.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/codigos-aliados.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/codigos.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/codigos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/generar-codigos.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/generar-codigos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,38 +29,129 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="2" />
-          <entry key="php" value="29" />
+          <entry key="js" value="3" />
+          <entry key="php" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="29" />
+          <entry key="JavaScript" value="3" />
+          <entry key="PHP" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="30" />
-          <entry key="php" value="2972" />
+          <entry key="js" value="57" />
+          <entry key="php" value="3119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JavaScript" value="30" />
-          <entry key="PHP" value="2971" />
+          <entry key="JavaScript" value="57" />
+          <entry key="PHP" value="3118" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back/conexion.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/historial-codigos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/codigos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#a#2;n#div#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/generar-codigos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/archivo-aliado.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/codigos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="102" column="152" selection-start-line="102" selection-start-column="152" selection-end-line="102" selection-end-column="152" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/codigos-aliados.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/archivos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/prueba.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -88,16 +176,18 @@
         <option value="$PROJECT_DIR$/public/editar-aliado.php" />
         <option value="$PROJECT_DIR$/back/editarAliado.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/back/codigos.php" />
         <option value="$PROJECT_DIR$/back/descargar.php" />
-        <option value="$PROJECT_DIR$/public/codigos.php" />
-        <option value="$PROJECT_DIR$/public/generar-codigos.php" />
-        <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/public/aliados.php" />
         <option value="$PROJECT_DIR$/public/historial-codigos.php" />
-        <option value="$PROJECT_DIR$/public/codigos-aliados.php" />
         <option value="$PROJECT_DIR$/back/prueba.php" />
         <option value="$PROJECT_DIR$/back/conexion.php" />
+        <option value="$PROJECT_DIR$/public/codigos-aliados.php" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/public/codigos.php" />
+        <option value="$PROJECT_DIR$/public/archivo-aliado.php" />
+        <option value="$PROJECT_DIR$/back/codigos.php" />
+        <option value="$PROJECT_DIR$/back/archivos.php" />
+        <option value="$PROJECT_DIR$/public/generar-codigos.php" />
       </list>
     </option>
   </component>
@@ -219,12 +309,12 @@
       <workItem from="1544549574051" duration="2138000" />
       <workItem from="1544565750996" duration="1924000" />
       <workItem from="1544569386014" duration="12930000" />
-      <workItem from="1544718300398" duration="6404000" />
+      <workItem from="1544718300398" duration="7937000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23396000" />
+    <option name="totallyTimeSpent" value="24929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -281,13 +371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back/codigos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="103" selection-start-line="103" selection-end-line="114" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back/editarAliado.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -302,28 +385,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/codigos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#a#1;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/editar-aliado.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
           <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -340,10 +405,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/back/conexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/codigos-aliados.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/codigos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#a#2;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/codigos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="102" column="152" selection-start-line="102" selection-start-column="152" selection-end-line="102" selection-end-column="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/archivo-aliado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/prueba.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/historial-codigos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
+        <state relative-caret-position="273">
+          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
@@ -351,31 +468,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/back/archivos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/generar-codigos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="33" column="17" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/codigos-aliados.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="23" column="87" selection-start-line="23" selection-start-column="87" selection-end-line="23" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/prueba.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back/conexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="340">
+          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
         </state>
       </provider>
     </entry>
