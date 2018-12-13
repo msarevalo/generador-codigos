@@ -1,25 +1,21 @@
 <?php
 
-include ('../back/conexion.php');
+include ('conexion.php');
 
 if(isset($_POST['get_option']))
 {
-    $prueba = $_POST['get_option'];
+    $aliado = $_POST['get_option'];
+    $find=mysqli_query($con, "SELECT aliados.idAliado, aliados.nombreAliado, codigos.codigo FROM aliados INNER JOIN codigos ON aliados.idAliado= " . $aliado . " AND codigos.aliado=aliados.idAliado");
+    //echo "<option selected>Seleccione Placa</option>";
+    $contador = 0;
 
-    $DesdeLetra = "a";
-    $HastaLetra = "z";
-    $DesdeNumero = 1;
-    $HastaNumero = 9;
+    echo "<thead><tr><td>Aliado</td><td>Codigos</td></tr></thead>";
+    while($row=mysqli_fetch_array($find))
+    {
 
-    //$letraAleatoria = chr(rand(ord($DesdeLetra), ord($HastaLetra)));
-    for ($i=0;$i<2;$i++){
-        echo $prueba[$i];
+        echo "<tr><td>" . $row[1] . "</td><td>" . $row[2] . "</td></tr>";
+        $contador++;
     }
-    for ($i=0;$i<3;$i++) {
-        echo chr(rand(ord($DesdeLetra), ord($HastaLetra)));
-    }
-    for ($i=0;$i<5;$i++){
-        echo rand($DesdeNumero, $HastaNumero);
-    }
+    exit;
 }
 ?>

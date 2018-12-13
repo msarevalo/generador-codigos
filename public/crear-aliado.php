@@ -16,7 +16,7 @@ include '../back/conexion.php';
 ?>
 
 <div style="margin-left: 350px">
-    <a href="index.php" style="text-decoration: none">Volver</a><br>
+    <a href="aliados.php" style="text-decoration: none">Volver</a><br>
     <header id="crear-header">Crear Aliado</header>
     <form action="../back/crearAliado.php" enctype="multipart/form-data" method="post" id="crear" style="padding: 30px">
         <!--<input id="archivo" accept=".csv" name="archivo" type="file" required/><br><br><br>-->

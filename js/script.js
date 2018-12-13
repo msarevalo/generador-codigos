@@ -1,4 +1,4 @@
-function ajaxvtest(val)
+function ajaxCodigos(val)
 {
     $.ajax({
         type: 'post',
@@ -7,7 +7,7 @@ function ajaxvtest(val)
             get_option:val
         },
         success: function (response) {
-            document.getElementById("prueba").innerHTML=response;
+            document.getElementById("codigos").innerHTML=response;
         }
     });
 }

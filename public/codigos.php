@@ -16,7 +16,9 @@ include '../back/conexion.php';
 ?>
 
 <div style="margin-left: 350px">
-    <a href="aliados.php" style="text-decoration: none">Aliados</a>
-    <a href="codigos.php" style="text-decoration: none">Codigos</a>
+    <a href="index.php" style="text-decoration: none">Volver</a><br>
+    <a href="historial-codigos.php" style="text-decoration: none">Historial de Codigos</a><br>
+    <a href="codigos-aliados.php" style="text-decoration: none">Codigos por Aliado</a><br>
+    <a href="generar-codigos.php" style="text-decoration: none">Generar Codigos</a>
     <!--<p id="prueba" style="text-transform: uppercase"></p>-->
 </div>
