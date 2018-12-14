@@ -2,8 +2,8 @@
 
 session_start();
 
-//$con = mysqli_connect("localhost", "celmedia", "ninguna123.", "claroclub");
-$con = mysqli_connect("localhost", "root", "celmedia_2017", "claroclub");
+$con = mysqli_connect("localhost", "celmedia", "ninguna123.", "claroclub");
+//$con = mysqli_connect("localhost", "root", "celmedia_2017", "claroclub");
 
 if (!$con){
     echo "<script>alert('Algo ha ocurrido')</script>";

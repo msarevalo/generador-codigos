@@ -16,7 +16,8 @@ include '../back/conexion.php';
 
 ?>
 <div style="margin-left: 350px">
-    <a href="codigos.php">Volver</a><br><br>
+    <a href="codigos.php"><img src="../images/return.png" style="width: 3.5%"></a>
+    <a href="index.php"><img src="../images/logo_claro_club_400x200.png" style="width: 150px"></a><br><br>
     <label for="aliados" class="titulos">Aliado</label>
     <select id="aliados" name="aliados" onchange="ajaxCodigos(this.value)">
         <option disabled selected value="">Seleccione Aliado</option>
@@ -29,7 +30,7 @@ include '../back/conexion.php';
         }
         ?>
     </select><br><br>
-    <table id="codigos" name="codigos">
+    <table id="codigos" name="codigos" class="tabla">
     </table>
 </div>
 </html>

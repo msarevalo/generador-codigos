@@ -9,11 +9,11 @@ if(isset($_POST['get_option']))
     //echo "<option selected>Seleccione Placa</option>";
     $contador = 0;
 
-    echo "<thead><tr><td>Aliado</td><td>Codigos</td></tr></thead>";
+    echo "<thead class='red'><tr><td>Aliado</td><td>Codigos</td></tr></thead>";
     while($row=mysqli_fetch_array($find))
     {
 
-        echo "<tr><td>" . $row[1] . "</td><td>" . $row[2] . "</td></tr>";
+        echo "<tr><td class='gray'>" . $row[1] . "</td><td class='gray'>" . $row[2] . "</td></tr>";
         $contador++;
     }
     exit;

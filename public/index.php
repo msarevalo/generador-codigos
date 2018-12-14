@@ -16,7 +16,8 @@ include '../back/conexion.php';
 ?>
 
 <div style="margin-left: 350px">
-    <a href="aliados.php" style="text-decoration: none">Aliados</a>
-    <a href="codigos.php" style="text-decoration: none">Codigos</a>
+    <a href="index.php"><img src="../images/logo_claro_club_400x200.png" style="width: 315px"></a><br>
+    <a href="aliados.php" class="btn w-M br-0 stl-3" style="text-decoration: none">Aliados</a>
+    <a href="codigos.php" class="btn w-M br-0 stl-3" style="text-decoration: none">Codigos</a>
     <!--<p id="prueba" style="text-transform: uppercase"></p>-->
 </div>

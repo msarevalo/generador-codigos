@@ -24,6 +24,7 @@ $personaje = mysqli_fetch_array($consulta);
 ?>
 
 <div style="margin-left: 350px">
+    <a href="aliados.php">Voler</a><br><br>
     <header id="crear-header">Editar Aliado</header>
     <form action="../back/editarAliado.php" enctype="multipart/form-data" method="post" id="crear" style="padding: 30px">
         <!--<input id="archivo" accept=".csv" name="archivo" type="file" required/><br><br><br>-->

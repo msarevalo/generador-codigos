@@ -15,32 +15,33 @@ include '../back/conexion.php';
 
 ?>
 
-<div style="margin-left: 350px">
-    <a href="index.php">Volver</a>
-    <a href="crear-aliado.php">Crear Aliados</a><br><br>
+<div style="margin-left: 350px; margin-top: 50px">
+    <a href="index.php"><img src="../images/return.png" style="width: 3.5%"></a>
+    <a href="index.php"><img src="../images/logo_claro_club_400x200.png" style="width: 150px"></a><br>
+    <a href="crear-aliado.php" class="btn w-M br-0 stl-3">Crear Aliados</a><br><br>
     <?php
     $id_eliminar = null;
     $dia_eliminar = null;
     $hora_eliminar = null;
     echo "<div id=\"listado-admin\" name=\"listado-admin\">
-        <header>Aliados</header>";
+        <header class='head'>Aliados</header>";
     $consulta = mysqli_query($con,"SELECT `idAliado`,`nombreAliado`,`activo` FROM `aliados` ORDER BY `nombreAliado`");
     /*$lconsulta = mysqli_fetch_array($consulta);
     $long = count($lconsulta);*/
-    echo "<table id='aliados' cellpadding='10'><thead><tr><th>ID</th><th>Nombre</th><th>Estado</th></tr></thead>";
+    echo "<table id='aliados' cellpadding='10' class='tabla mb20'><thead class=\"red\"><tr><th>ID</th><th>Nombre</th><th>Estado</th><th>Acciones</th></tr></thead>";
     while ($lconsulta = mysqli_fetch_array($consulta)){
         $contador = 0;
-        echo "<tr>";
+        echo "<tr class=\"bold\">";
         for ($i = 0; $i <= 1; $i++){
             $id_eliminar = $lconsulta['idAliado'];
-            echo "<td style='text-transform: capitalize'>" . $lconsulta[$i] . "</td>";
+            echo "<td style='text-transform: capitalize' class='gray'>" . $lconsulta[$i] . "</td>";
         }
         if ($lconsulta['activo']==1){
-            echo "<td style='text-transform: capitalize'>Activo</td>";
+            echo "<td style='text-transform: capitalize' class='gray'>Activo</td>";
         }else{
-            echo "<td style='text-transform: capitalize'>Inactivo</td>";
+            echo "<td style='text-transform: capitalize' class='gray'>Inactivo</td>";
         }
-        echo "<td><a href='editar-aliado.php?id={$lconsulta[$contador]}'><img src='../images/edit.png' style='width: 5%'></a></td>";
+        echo "<td class='gray'><a href='editar-aliado.php?id={$lconsulta[$contador]}'><img src='../images/edit.png' style='width: 25%'></a></td>";
         $contador++;
     }
 
