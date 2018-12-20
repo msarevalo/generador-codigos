@@ -39,15 +39,15 @@ if ($cantidad>=1) {
     $prueba = $lconsulta['nombreAliado'];
     $car = $prueba[0] . $prueba[1];
 
-    $DesdeLetra = "a";
-    $HastaLetra = "z";
+    $DesdeLetra = "A";
+    $HastaLetra = "Z";
     $DesdeNumero = 1;
     $HastaNumero = 9;
 //if ($cantidad<50) {
 //$contador = 0;
     for ($j = 0; $j < $cantidad; $j++) {
         $cod = null;
-        $cod = $car;
+        $cod = strtoupper($car);
         /*for ($i = 0; $i < 2; $i++) {
             $cod .= $prueba[$i];
         }*/
