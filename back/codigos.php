@@ -51,10 +51,10 @@ if ($cantidad>=1) {
         /*for ($i = 0; $i < 2; $i++) {
             $cod .= $prueba[$i];
         }*/
-        for ($i = 0; $i < 3; $i++) {
+        for ($i = 0; $i < 2; $i++) {
             $cod .= chr(rand(ord($DesdeLetra), ord($HastaLetra)));
         }
-        for ($i = 0; $i < 5; $i++) {
+        for ($i = 0; $i < 4; $i++) {
             $cod .= rand($DesdeNumero, $HastaNumero);
         }
         /*if ($contador == 0){
