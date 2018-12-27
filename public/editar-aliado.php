@@ -24,16 +24,17 @@ $personaje = mysqli_fetch_array($consulta);
 ?>
 
 <div style="margin-left: 350px">
-    <a href="aliados.php">Voler</a><br><br>
-    <header id="crear-header">Editar Aliado</header>
-    <form action="../back/editarAliado.php" enctype="multipart/form-data" method="post" id="crear" style="padding: 30px">
+    <a href="aliados.php"><img src="../images/return.png" style="width: 3.5%"></a>
+    <a href="index.php"><img src="../images/logo_claro_club_400x200.png" style="width: 150px"></a>
+    <header id="crear-header" class="head">Editar Aliado</header>
+    <form action="../back/editarAliado.php" enctype="multipart/form-data" method="post" id="crear" style="padding: 30px" class='tabla mb20'>
         <!--<input id="archivo" accept=".csv" name="archivo" type="file" required/><br><br><br>-->
         <label for="nombre" class="titulos">Nombre</label>
         <?php
-        echo "<input type=\"text\" id=\"nombre\" name=\"nombre\" value='" . $personaje['nombreAliado'] . "' required><br><br>";
+        echo "<input type=\"text\" id=\"nombre\" name=\"nombre\" value='" . $personaje['nombreAliado'] . "' required class=\"mdl-select__input\"><br><br>";
         ?>
         <label for="activo" class="titulos">Activo</label>
-        <select id="activo" name="activo" required>
+        <select id="activo" name="activo" required class="mdl-select__input">
             <?php
             if ($personaje['activo']==='1'){
                 echo "<option value='1' selected>Activo</option>
@@ -44,7 +45,7 @@ $personaje = mysqli_fetch_array($consulta);
             }
             ?>
         </select><br><br>
-        <input name="enviar" type="submit" value="Editar" id="btnHorario"/><br>
+        <input name="enviar" type="submit" value="Editar" id="btnHorario" class="btn w-M br-0 stl-3"/><br>
     </form>
 </div>
 

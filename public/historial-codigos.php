@@ -23,7 +23,7 @@ include '../back/conexion.php';
     $hora_eliminar = null;
     echo "<div id=\"listado-admin\" name=\"listado-admin\">
         <header class='head'>Historial Codigos</header>";
-    $consulta = mysqli_query($con,"SELECT `idArchivo`,`nombreArchivo`,`fechaArchivo` FROM `archivos`");
+    $consulta = mysqli_query($con,"SELECT `idArchivo`,`nombreArchivo`,`fechaArchivo` FROM `archivos` ORDER BY `fechaArchivo` DESC ");
     /*$lconsulta = mysqli_fetch_array($consulta);
     $long = count($lconsulta);*/
     echo "<table id='historial' class='tabla mb20'><thead class=\"red\"><tr><th>ID</th><th>Nombre</th><th>Fecha</th><th>Descargar</th></tr></thead>";

@@ -19,7 +19,7 @@ include '../back/conexion.php';
     <a href="codigos.php"><img src="../images/return.png" style="width: 3.5%"></a>
     <a href="index.php"><img src="../images/logo_claro_club_400x200.png" style="width: 150px"></a><br><br>
     <label for="aliados" class="titulos">Aliado</label>
-    <select id="aliados" name="aliados" onchange="ajaxCodigos(this.value)">
+    <select id="aliados" name="aliados" onchange="ajaxCodigos(this.value)" class="mdl-select__input">
         <option disabled selected value="">Seleccione Aliado</option>
         <?php
         $consulta = mysqli_query($con,"SELECT `idAliado`,`nombreAliado` FROM `aliados` ORDER BY `nombreAliado` ASC;");

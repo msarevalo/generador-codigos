@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Celmedia | ClaroClub</title>
+    <meta charset="UTF-8">
+    <!-- Estilos -->
+    <link href="../css/estilos.css" rel="stylesheet">
+    <!--<link href="../css/estilos.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/script.js" type="application/javascript"></script>
+</head>
+
 <?php
 /**
  * Created by PhpStorm.
@@ -19,7 +32,18 @@ if (isset($_POST['cantidad'])){
 }
 
 if ($cantidad>=1) {
-    echo "<a href='../public/generar-codigos.php'>Volver</a>";
+    $consultaAliado = mysqli_query($con, "SELECT `nombreAliado` FROM `aliados` WHERE `idAliado`=" . $id . ";");
+
+    $lconsultaAliado = mysqli_fetch_array($consultaAliado);
+
+    $aliadoNombre = $lconsultaAliado['nombreAliado'];
+    echo "<a href=\"../public/generar-codigos.php\" style='text-decoration: none; color: #333333; cursor: pointer'><div style=\"margin-left: 350px; width: 300px\">
+    <img src=\"../images/logo_claro_club_400x200.png\" style=\"width: 315px\"><br>
+    <center><h3>Se crearon " . $cantidad . " codigos para el aliado "  . $aliadoNombre . " con exitos </h3><br>
+    <button class='btn w-M br-0 stl-3' style='cursor: pointer'>Aceptar</button></center>
+    <!--<p id=\"prueba\" style=\"text-transform: uppercase\"></p>-->
+</div></a>";
+    ///////////////////////////
     $consulta = mysqli_query($con, "SELECT `nombreAliado` FROM `aliados` WHERE `idAliado`=" . $id . ";");
 
     $lconsulta = mysqli_fetch_array($consulta);
@@ -51,7 +75,8 @@ if ($cantidad>=1) {
         /*for ($i = 0; $i < 2; $i++) {
             $cod .= $prueba[$i];
         }*/
-        for ($i = 0; $i < 2; $i++) {
+    //////////////////////////////
+    for ($i = 0; $i < 2; $i++) {
             $cod .= chr(rand(ord($DesdeLetra), ord($HastaLetra)));
         }
         for ($i = 0; $i < 4; $i++) {
@@ -61,7 +86,8 @@ if ($cantidad>=1) {
             $cod = "holor33233";
             $contador++;
         }*/
-        $consulta2 = mysqli_query($con, "SELECT * FROM `codigos` WHERE `aliado`=" . $id . " AND `codigo` LIKE '%" . $cod . "%';");
+    ///////////////////////////
+    $consulta2 = mysqli_query($con, "SELECT * FROM `codigos` WHERE `aliado`=" . $id . " AND `codigo` LIKE '%" . $cod . "%';");
         //echo $cod . "<br>";
         if (!$lconsulta1 = mysqli_fetch_array($consulta2)) {
             $consulta3 = mysqli_query($con, "INSERT INTO `codigos` (`codigo`, `aliado`, `fecha`) VALUES ('" . $cod . "', " . $id . ", '" . $fecha . "')");
@@ -117,6 +143,7 @@ if ($cantidad>=1) {
         echo "<script>alert('prueba')</script>";
         exit;
     }*/
+///////////////////////////////
 }else{
     if ($cantidad==0){
         echo "<script>alert('La cantidad no puede ser cero!'); window.location.href='../public/generar-codigos.php'</script>";

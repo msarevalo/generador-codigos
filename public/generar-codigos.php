@@ -16,12 +16,14 @@ include '../back/conexion.php';
 ?>
 
 <div style="margin-left: 350px">
-    <a href="codigos.php" style="text-decoration: none">Volver</a><br>
-    <header id="crear-header">Crear Codigos</header>
-    <form action="../back/codigos.php" enctype="multipart/form-data" method="post" id="crear" style="padding: 30px">
+    <a href="codigos.php"><img src="../images/return.png" style="width: 3.5%"></a>
+    <a href="index.php"><img src="../images/logo_claro_club_400x200.png" style="width: 150px"></a><br>
+    <a href="aliados.php" class="btn w-M br-0 stl-3">Aliados</a><br><br>
+    <header id="crear-header" class='head'>Generar Codigos</header>
+    <form action="../back/codigos.php" enctype="multipart/form-data" method="post" id="crear" style="padding: 30px" class='tabla mb20'>
         <!--<input id="archivo" accept=".csv" name="archivo" type="file" required/><br><br><br>-->
         <label for="aliados" class="titulos">Aliado</label>
-        <select id="aliados" name="aliados" required>
+        <select id="aliados" name="aliados" required class="mdl-select__input">
             <option disabled selected value="">Seleccione Aliado</option>
             <?php
             $consulta = mysqli_query($con,"SELECT `idAliado`,`nombreAliado` FROM `aliados` WHERE `activo`=1 ORDER BY `nombreAliado` ASC;");
@@ -31,10 +33,10 @@ include '../back/conexion.php';
                 }
             }
             ?>
-        </select>
+        </select><br><br>
         <label>Cantidad</label>
-        <input type="number" id="cantidad" name="cantidad" required><br><br>
-        <input name="enviar" type="submit" value="Crear" id="btnHorario"/><br>
+        <input type="number" id="cantidad" name="cantidad" required class="mdl-select__input"><br><br>
+        <input name="enviar" type="submit" value="Crear" id="btnHorario" class="btn w-M br-0 stl-3"/><br>
     </form>
     <!--<p id="prueba" style="text-transform: uppercase"></p>-->
 </div>
